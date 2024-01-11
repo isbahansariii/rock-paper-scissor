@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #031927;
+}
+
+body {
+  background-color: #9dd1f1;
+  overflow-x: hidden;
+}
+/* red= #BA1200 
+   black= #031927
+   sky= #9DD1F1
+   blue= #508AA8
+   lightBlue= #C8E0F4
+*/
+
+/* heading */
+.heading1 {
+  background-color: #031927;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px #9dd1f1;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+/* images for selection b/w rock, paper and scissor */
+#images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 40vh;
+  gap: 5%;
+}
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+.img:hover {
+  background-color: #031927;
+  cursor: pointer;
+}
+#rock > img,
+#paper > img,
+#scissor > img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 3px #031927;
+}
+
+/* score showing */
+#score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  gap: 10%;
+}
+
+/* show user and computer for the score */
+#name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3vw;
+  gap: 5%;
+}
+
+/* showing the result */
+#result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 17vh;
+  font-size: 1.5rem;
+}
+#showResult {
+  text-align: center;
+  background-color: #031927;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Reset button -> for restarting game (new game: score will reset) */
+#reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 7vh;
+}
+#resetButton {
+  border-radius: 10px;
+  padding: 10px 25px;
+  background-color: #031927;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#resetButton:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 750px) {
+  /* images for selection b/w rock, paper and scissor */
+  .img {
+    width: 10rem;
+    height: 10rem;
+  }
+  /* score showing */
+  #score {
+    font-size: 3rem;
+    gap: 7rem;
+  }
+
+  /* show user and computer for the score */
+  #name {
+    font-size: 3rem;
+    gap: 2rem;
+  }
+}
+@media (max-width: 650px) {
+  /* images for selection b/w rock, paper and scissor */
+  .img {
+    width: 8rem;
+    height: 8rem;
+  }
+  /* score showing */
+  #score {
+    font-size: 2.5rem;
+  }
+
+  /* show user and computer for the score */
+  #name {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  /* heading */
+  .heading1 {
+    font-size: 1.5rem;
+  }
+  /* images for selection b/w rock, paper and scissor */
+  .img {
+    width: 7.2rem;
+    height: 7.2rem;
+  }
+  /* score showing */
+  #score {
+    font-size: 2rem;
+    gap: 6rem;
+  }
+  /* show user and computer for the score */
+  #name {
+    font-size: 2rem;
+  }
+
+  /* showing the result */
+  #result {
+    height: 15vh;
+    font-size: 1.2rem;
+  }
+
+  /* Reset button -> for restarting game (new game: score will reset) */
+  #resetButton {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  /* images for selection b/w rock, paper and scissor */
+  .img {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 425px) {
+  /* images for selection b/w rock, paper and scissor */
+  .img {
+    width: 5.7rem;
+    height: 5.7rem;
+  }
+  /* score showing */
+  #score {
+    font-size: 2rem;
+    gap: 5rem;
+  }
+  /* show user and computer for the score */
+  #name {
+    font-size: 1.5rem;
+  }
+
+  /* showing the result */
+  #result {
+    height: 12vh;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media (max-width: 350px) {
+  /* heading */
+  .heading1 {
+    font-size: 1.2rem;
+  }
+  .img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}

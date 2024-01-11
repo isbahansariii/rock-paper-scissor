@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rock-Paper-Scissor Game</title>
+</head>
+<body>
+    <!-- heading -->
+    <h1 class="heading1">Rock Paper Scissor Game</h1>
+
+    <!-- images for selection b/w rock, paper and scissor -->
+    <div id="images">
+        <div class="img" id="rock">
+            <img src="./images/rock.png" alt="rock">
+        </div>
+        <div class="img" id="paper">
+            <img src="./images/paper.png" alt="paper">
+        </div>
+        <div class="img" id="scissor">
+            <img src="./images/scissors.png" alt="scissor">
+        </div>
+    </div>
+    
+    <!-- score showing -->
+    <div id="score">
+        <p id="userScore">0</p>
+        <p id="compScore">0</p>
+    </div>
+
+    <!-- show user and computer for the score-->
+    <div id="name">
+        <p>User</p>
+        <p>Comp</p>
+    </div>
+
+    <!-- Showing the result -->
+    <div id="result">
+        <p id="showResult">--Result--</p>
+    </div>
+
+    <!-- Reset button -> for restarting game (new game: score will reset)  -->
+    <div id="reset">
+        <button id="resetButton">Reset</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
